@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Na minha opiniao, vejo mais utilidade no tailwind quando declarando
+as classes de forma global, pois ao inves de declarar as classes no arquivo
+que acaba sujando tudo. Declarando aqui, a funcionalidade é a mesma e deixa
+o código mais limpo. */
+
+/*
+    Não é o jeito q vai ser usado no NLW Return, mas é o jeito q eu vou querer
+    tratar.
+*/
+
+/*É possivel configurar cores usando []*/
+
+body {
+  @apply bg-[#09090a] text-zinc-100;
+}
+
+.button {
+  @apply bg-violet-500 px-4 h-10 rounded text-violet-100 hover:bg-violet-700 transition-colors duration-500;
+}
+
+.chatDrops {
+  @apply w-6 h-6 text-white;
+}
+
+.spanDiv {
+  @apply max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-700;
+}
+
+.spanTag {
+  @apply pl-2;
+}
+
+.widgetForm {
+  @apply bg-zinc-900 p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2rem)] md:w-auto;
+}
+
+.widgetFormButton {
+  @apply bg-zinc-800 rounded-lg py-5 w-24 flex-1 flex flex-col items-center gap-2 border-2 border-transparent hover:border-brand-500 focus:border-brand-500 focus:outline-none;
+}
+
+.textarea {
+  @apply min-w-[304px] w-full min-h-[112px] text-sm placeholder-zinc-400 text-zinc-100 border-zinc-600 bg-transparent rounded-md focus:border-brand-500 focus:ring-brand-500 focus:ring-1 resize-none focus:outline-none scrollbar scrollbar-thumb-zinc-700 scrollbar-none scrollbar-track-transparent;
+}
+
+.spanContent {
+  @apply text-xl leading-6 flex items-center gap-2;
+}
+
+.buttonContent {
+  @apply top-5 left-5 absolute text-zinc-400 hover:text-zinc-100;
+}
+
+.form {
+  @apply my-4 w-full;
+}
+
+.iconArrowBack {
+  @apply w-4 h-4;
+}
